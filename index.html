@@ -1,81 +1,225 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segview Segurança</title>
+    <title>SegV</title>
+
+    <link rel="shortcut icon" href="assets/segv-logo-transformed.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 </head>
 <body>
-    <section class="container-1">
+
+    <div id="top conteudo-principal"></div>
+
+    <div class="cabecalho hidden-ler" id="cabecalho">
+
+        <img id="logo" src="assets/segv-logo-transformed.png" alt="Logo da SegV" class="logo">
+        <aside>
+            <nav>
+                <ul class="menu-cabecalho" id="menu-cabecalho">
+                    <li class="item"><a href="#top">Início</a></li>
+                    <li class="item"><a href="#container-2">Sobre</a></li>
+
+                    <li class="item">
+                        <select id="select-servico" class="select-servico" onchange="redirecionarPagina()">
+                            <option value="#top">Serviços</option>
+                            <option value="#container-3">Nossos serviços</option>
+                            <option value="#container-4">Em destaque</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <img src="assets/bars-solid (4).svg" alt="" id="simbolo-menu-mobile" onclick="abrirMenu()">
+        <img src="assets/bars-solid (4).svg" alt="" id="fechar-menu-mobile" onclick="fecharMenu()">
+    </div>
+
+    <div class="menu-mobile" id="menu-mobile">
+        <ul class="links-navegacao">
+            <li class="item-mobile hidden"><a href="#top">Início</a></li>
+            <li class="item-mobile hidden"><a href="#container-2">Sobre</a></li>
+
+            <li class="item-mobile hidden">
+                <select class="select-servico" id="select-servico" onchange="redirecionarPagina()">
+                    <option value="#top">Serviços</option>
+                    <option value="#container-3">Nossos serviços</option>
+                    <option value="#container-4">Em destaque</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+
+    <section class="container-1 conteudo-principal">
         <div id="large-header" class="large-header">
             <canvas id="demo-canvas"></canvas>
         </div>
-        
-        <div class="cabecalho-container-1">
-            <img src="assets/SEGV.png" alt="logosegv">
-            <aside>
-                <nav>
-                    <ul id="menu-cabecalho">
-                        <li class="item1"><a href="#">Início</a></li>
-                        <li class="item1"><a href="#">Nossos Serviços</a></li>
-                        <li class="item1"><a href="#">Sobre nós</a></li>
-                        <li class="item1"><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-            </aside>
-        </div>
         <div class="conteudo-container-1">
-            <main>
+            <main class="hidden">
                 <h1>Tecnologia usada para a segurança e integridade da sua empresa</h1>
-                <h2>Inovações tecnológicas para a garantia de segurança e câmera tal tal tal.</h2>
+                <p>Inovações tecnológicas para assegurar a proteção e a eficiência de sistemas avançados de monitoramento.</p>
             </main>
         </div>
     </section>
 
-    <section class="container-2">
-        <header class="topcontainer-2">
-            <h1>Segurança | Monitoramento | Confiança</h1>
-        </header>
-        <div class="servicos-container">
-            <div class="servicos-item">
-                <div class="images-servicos">
-                    <img src="assets/download (36).png" alt="">
-                </div>
-                <div class="text-images">
-                    <h1>Monitoramento de Câmeras</h1>
-                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Assumenda consectetur asperiores minima quod impedit beatae et pariatur hic expedita facilis numquam</p>
-                </div>
-            </div>
+    <section class="container-2 conteudo-principal" id="container-2">
 
-            <div class="servicos-item">
-                <div class="images-servicos">
-                    <img class="img" src="assets/security.png" alt="">
-                </div>
-                <div class="text-images">
-                    <h1>Gerenciamento de tudo</h1>
-                </div>
+        <div class="conteudo-container-2">
+            <div class="imagens-container-2">
+                <img src="assets/tec.png" alt="" id="img1-c-2" class="hidden">
+                <img src="assets/download (29).png" alt="" id="img2-c-2" class="hidden">
             </div>
-
-            <div class="servicos-item">
-                <div class="images-servicos">
-                    <img src="assets/security.png" alt="">
-                </div>
-                <div class="text-images">
-                    <h1>Taltaltaltal</h1>
-                </div>
-            </div>
-
-            <div class="servicos-item">
-                <div class="images-servicos">
-                    <img src="assets/download (36).png" alt="">
+            <div class="texto-container-2">
+                <span class="intro-container">sobre nós</span>
+                <h1 style="text-transform: uppercase; margin-bottom: 7px;">descubra nossa jornada de proteção ao cliente</h1>
+                <p style="text-align: justify;">Com o constante avanço do mercado de segurança, investimos em treinamentos e pesquisas para oferecer o melhor atendimento aos nossos clientes. Nossa equipe, altamente comprometida, está pronta para atender às suas necessidades, esclarecer dúvidas sobre equipamentos, serviços, projetos e oferecer suporte técnico de excelência.</p>
+                <p style="text-align: justify; display: none; margin-top: 1vh;" id="mais-texto" class="hidden-ler">Além disso, buscamos integrar as mais modernas tecnologias aos nossos processos, garantindo soluções eficientes e personalizadas que atendam às demandas específicas de cada cliente, sempre com foco na qualidade e na inovação.</p>
+                <div class="botao-container">
+                    <button onclick="lerMais()" id="botao-ler-mais" class="button hidden-ler">ler mais</button>
+                    <button onclick="lerMenos()" id="botao-ler-menos" style="display: none;" class="button hidden-ler">Ler menos</button>
                 </div>
             </div>
         </div>
+
     </section>
+
+    <section class="container-3 conteudo-principal" id="container-3">
+        <div class="conteudo-container-3">
+            <span class="intro-container">Nossos Serviços</span>
+            <h1>monitoramento com integração de i.a intelbras</h1>
+            <p>Revolucionando o mercado através de inovações se adequando cada vez mais as tecnologias presentes, tudo para o melhor suporte ao cliente e suas demandas</p>
+        </div>
+        <div class="servicos">
+
+            <div class="servico-item hidden">
+                <div class="icon-servico">
+                    <img src="assets/target-lock-regular-36.png" alt="">
+                </div>
+                <div class="texto-servico">
+                    <h2>Avaliação de Segurança</h2>
+                    <p>Realizamos uma análise completa para identificar riscos, corrigir vulnerabilidades e fortalecer a proteção do seu patrimônio, com soluções personalizadas e tecnologia de ponta.</p>
+                </div>
+            </div>
+
+            <div class="servico-item hidden">
+                <div class="icon-servico">
+                    <img src="assets/cctv-regular-36.png" alt="">
+                </div>
+                <div class="texto-servico">
+                    <h2>Câmeras</h2>
+                    <p>Oferecemos sistemas modernos e eficientes de monitoramento, com alta qualidade de imagem, tecnologia avançada e inteligência artificial, garantindo máxima proteção e controle para residências e empresas.</p>
+                </div>
+            </div>
+
+            <div class="servico-item hidden">
+                <div class="icon-servico">
+                    <img src="assets/camera-home-regular-36.png" alt="">
+                </div>
+                <div class="texto-servico">
+                    <h2>Monitoramento</h2>
+                    <p>Disponibilizamos serviços de monitoramento em tempo real, garantindo segurança contínua e resposta imediata, com tecnologia avançada para proteger seu patrimônio e sua tranquilidade.</p>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="container-4 conteudo-principal" id="container-4">
+        <img src="assets/Image (3).png" alt="" id="img-tec" class="hidden">
+        <div class="conteudo-container-4">
+            <div class="texto-container-4">
+                <span class="intro-container">em destaque</span>
+                <h1>Defesa com integração tecnológica</h1>
+                <p>Implementamos soluções de segurança integradas com tecnologia de ponta, conectando sistemas de monitoramento, controle de acesso e análise inteligente para uma proteção mais eficiente e confiável.</p>
+            </div>
+
+            <div class="defensa-itens">
+                <div class="defesa-item hidden">
+                    <div class="blob"></div> 
+                    <div class="bg"></div> 
+                    <img src="assets/Customize.png" alt="HTML5">
+                    <h3>Soluções Personalizadas</h3>
+                    <p>Criamos soluções de segurança sob medida, adaptadas às necessidades específicas de cada cliente.</p>
+                </div>
+                <div class="defesa-item hidden">
+                    <div class="blob"></div> 
+                    <div class="bg"></div> 
+                    <img src="assets/Threat.png" alt="CSS3">
+                    <h3>Avaliação de Vulnerabilidade</h3>
+                    <p>Identificamos e analisamos pontos frágeis em seus sistemas, oferecendo soluções para mitigar riscos e reforçar a segurança.</p>
+                </div>
+                <div class="defesa-item hidden">
+                    <div class="blob"></div> 
+                    <div class="bg"></div> 
+                    <img src="assets/24 Hours Service.png" alt="JavaScript">
+                    <h3>Serviço 24/7</h3>
+                    <p>Monitoramento e suporte contínuos, garantido proteção a qualquer hora, todos os dias.</p>
+                </div>
+                <div class="defesa-item hidden">
+                    <div class="blob"></div> 
+                    <div class="bg"></div> 
+                    <img src="assets/Training.png" alt="TailwindCSS">
+                    <h3>Profissionais Treinados</h3>
+                    <p>Equipe qualificada e preparada para oferecer soluções de segurança com eficiência e expertise.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="rodape conteudo-principal">
+        <img src="assets/segv-logo-transformed.png" alt="Logo da SegV" id="logo-footer">
+
+        <div class="itens-footer">
+
+            <div class="contato">
+                <h3 class="title-itens-footer">contato</h3>
+                <div class="item-footer">
+                    <img src="assets/envelope-solid-24.png" alt="">
+                    <span class="texto-item-footer">(79) 3302-5552</span>
+                </div>
+                <div class="item-footer">
+                    <img src="assets/phone-solid-24.png" alt="">
+                    <span class="texto-item-footer">contato@segview.com.br</span>
+                </div>
+            </div>
+    
+            <div class="empresa">
+                <h3 class="title-itens-footer">empresa</h3>
+                <div class="item-footer empresaa">
+                    <img src="assets/building-solid-24.png" alt="">
+                    <span class="texto-item-footer">Rua Carlos Gomes, 397,<br>Ponto Novo,<br>CEP 49047-070</span>
+                </div>
+            </div>
+
+            <div class="social">
+                <h3 class="title-itens-footer">social</h3>
+                <div class="item-footer">
+                    <img src="assets/instagram-alt-logo-24.png" alt="">
+                    <span class="texto-item-footer"><a href="https://www.instagram.com/segv_seguranca/" target="_blank" style="text-decoration: none; color: white;">Instagram</a></span>
+                </div>
+            </div>
+
+            <div class="logo-footer-mobile">
+                <img src="assets/segv-logo-transformed.png" alt="" id="logo-footer-mobile">
+            </div>
+
+        </div>
+
+    </footer>
+
+    <footer class="copy conteudo-principal">
+        <p>Copyright © 2024 - Segview. Desenvolvido por CrystalCode. </p>
+    </footer>
 
     <script src="script.js"></script>
 </body>
