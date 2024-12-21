@@ -1,145 +1,499 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Segview Segurança</title>
+    <title>SegV</title>
+
+    <link rel="shortcut icon" href="assets/segv-logo-transformed.png" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@300..700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/responsive.css">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
 </head>
 <body>
-    <section class="container-1">
-        <div id="large-header" class="large-header">
-            <canvas id="demo-canvas"></canvas>
-        </div>
-        
-        <header class="cabecalho-container-1">
-            <img src="assets/segv-logo-transformed.png" alt="logosegv">
-            <aside>
-                <nav>
-                    <ul id="menu-cabecalho">
-                        <li class="item1"><a href="#">Início</a></li>
-                        <li class="item1"><a href="#">Nossos Serviços</a></li>
-                        <li class="item1"><a href="#">Sobre nós</a></li>
-                        <li class="item1"><a href="#">Contato</a></li>
-                    </ul>
-                </nav>
-            </aside>
-        </header>
-        <div id="conteudo-container-1">
-            <div class="main-container-1">
-                <h1>Tecnologia usada para a segurança e integridade da sua empresa</h1>
-                <button>Entre em contato</button>
-            </div>
-        </div>
-    </section>
 
-    <section class="container">
+    <div id="top conteudo-principal"></div>
+
+    <div class="cabecalho hidden-ler" id="cabecalho">
+
+        <img id="logo" src="assets/segv-logo-transformed.png" alt="Logo da SegV" class="logo">
+        <aside>
+            <nav>
+                <ul class="menu-cabecalho" id="menu-cabecalho">
+                    <li class="item"><a href="#top">Início</a></li>
+                    <li class="item"><a href="#container-2">Sobre</a></li>
+
+                    <li class="item">
+                        <select id="select-servico" class="select-servico" onchange="redirecionarPagina()">
+                            <option value="#top">Serviços</option>
+                            <option value="#container-3">Nossos serviços</option>
+                            <option value="#container-4">Em destaque</option>
+                        </select>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+        <img src="assets/bars-solid (4).svg" alt="" id="simbolo-menu-mobile" onclick="abrirMenu()">
+        <img src="assets/bars-solid (4).svg" alt="" id="fechar-menu-mobile" onclick="fecharMenu()">
+    </div>
+
+    <div class="menu-mobile" id="menu-mobile">
+        <ul class="links-navegacao">
+            <li class="item-mobile hidden"><a href="#top">Início</a></li>
+            <li class="item-mobile hidden"><a href="#container-2">Sobre</a></li>
+
+            <li class="item-mobile hidden">
+                <select class="select-servico" id="select-servico" onchange="redirecionarPagina()">
+                    <option value="#top">Serviços</option>
+                    <option value="#container-3">Nossos serviços</option>
+                    <option value="#container-4">Em destaque</option>
+                </select>
+            </li>
+        </ul>
+    </div>
+
+    <section class="container-1 conteudo-principal">
+        <div class="video-fundo">
+            <video class="video-background" autoplay muted loop>
+                <source src="assets/video-segv.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div class="conteudo-container-1">
+            <main class="main-container-1">
+                <h1>Tecnologia usada para a segurança e integridade da sua empresa</h1>
+                <div class="buttons-container-1">
+                    <button>Entre em contato</button>
+                    <button id="botao-play"><img src="assets/play-regular-36.png" alt=""></button>
+                </div>
+            </main>
+        </div>
+    </section>  
+
+    <section class="container-2" id="container-2">
+
         <div class="content">
-            <h1 class="animate">Soluções em Monitoramento e Segurança</h1>
-            <p class="animate">Nossas soluções são projetadas para garantir a segurança da sua empresa, desenvolvidas por especialistas em monitoramento. Contamos com equipes altamente capacitadas, que oferecem serviços completos, desde a venda até a instalação de câmeras de segurança.</p>
+            <header>
+                <span class="intro-container">Nossos Serviços e Sobre Nós</span>
+                <h1 class="">Soluções em Monitoramento e Segurança</h1>
+                <p class="">Nossas soluções são projetadas para garantir a segurança da sua empresa, desenvolvidas por especialistas em monitoramento. Contamos com equipes altamente capacitadas, que oferecem serviços completos, desde a venda até a instalação de câmeras de segurança.</p>
+            </header>
+
             <div class="container-ul">
 
-            <ul>
-                <li><a class="active animate" href="#">Monitoramento</a></li>
-                <li><a class="animate" href="#">Instalação de câmeras</a></li>
-                <li><a class="animate" href="#">Projetos de segurança</a></li>
-            </ul>
+                <ul>
+                    <li><a class="active hidden" href="#">Monitoramento com I.A</a></li>
+                    <li><a class="hidden" href="#">Instalação de câmeras</a></li>
+                    <li><a class="hidden" href="#">Projetos de segurança</a></li>
+                </ul>
 
-            <article class="conteudo-ul active animate">
-            <div class="division">
-                <div class="box-container">
-                    <box-icon name='webcam' type='solid' color='#2f5ca3' size="50px" ></box-icon>
-                </div>
-                <div class="text-container">
-                    <h2>Monitoramento</h2>
-                    <p>Oferecemos soluções completas de segurança que atendem às necessidades específicas de cada cliente. Desde a venda de câmeras de alta tecnologia até a instalação e monitoramento, nossos serviços são projetados para garantir a proteção e tranquilidade, impulsionando a segurança dos negócios e residências.</p>
-                    <button class="btn" aria-label="Saiba mais sobre monitoramento">Saiba Mais</button>
-                </div>
-                    <div class="image-ul">
-                        <img src="assets/download (36).png" alt="">
-                    </div>
-                </div>
-            </article>
-
-            <article class="conteudo-ul animate">
-                <div class="division">
-                    <div class="box-container">
-                        <box-icon name='shield-quarter' color='#2f5ca3' size="50px" ></box-icon>                    </div>
-                    <div class="text-container">
-                        <h2>Instalação de câmeras</h2>
-                        <p>Além do monitoramento 24h por dia, oferecemos, a cada parceria e vendas de câmeras, a instalação delas com os profissionais mais capacitados e prontos para fazer o melhor trabalho possível.</p>
-                        <button class="btn" aria-label="Saiba mais sobre as instalações de câmeras">Saiba Mais</button>
-                    </div>
+                <article class="conteudo-ul active hidden">
+                    <div class="division">
+                        <div class="box-container">
+                            <box-icon name='webcam' type='solid' color='#2f5ca3' size="50px" ></box-icon>
+                        </div>
+                        <div class="texto-container-2">
+                            <h2>Monitoramento com Inteligência Artificial</h2>
+                            <p>Monitoramento com Inteligência Artificial para uma vigilância mais precisa e eficiente, capaz de analisar e responder em tempo real às necessidades de segurança do seu ambiente.</p>
+                            <button class="btn" aria-label="Saiba mais sobre monitoramento">Saiba Mais</button>
+                        </div>
                         <div class="image-ul">
-                            <img src="assets/Sem nome (1480 x 1920 px).png" alt="">
+                            <img src="assets/download (36).png" alt="">
                         </div>
                     </div>
                 </article>
 
-            <article class="conteudo-ul animate">
-                <div class="division">
-                    <div class="box-container">
-                        <box-icon name='lock-alt' color='#2f5ca3' size="50px"></box-icon>
+                <article class="conteudo-ul hidden">
+                    <div class="division">
+                        <div class="box-container">
+                            <box-icon name='shield-quarter' color='#2f5ca3' size="50px" ></box-icon>
+                        <div class="texto-container-2" id="instal-cam">
+                            <h2>Instalação de câmeras</h2>
+                            <p>Além do monitoramento 24h por dia, oferecemos, a cada parceria e vendas de câmeras, a instalação delas com os profissionais mais capacitados e prontos para fazer o melhor trabalho possível.</p>
+                            <button class="btn" aria-label="Saiba mais sobre as instalações de câmeras">Saiba Mais</button>
+                        </div>
+                            <div class="image-ul">
+                                <img src="assets/Sem nome (1480 x 1920 px).png" alt="">
+                            </div>
+                        </div>
                     </div>
-                    <div class="text-container">
-                        <h2>Projetos de segurança</h2>
-                        <p>Somos uma empresa registrada no CREA, composta por Engenheiros Eletricistas e de Segurança, além de técnicos especializados prontos para atender a todas as suas necessidades em segurança. Oferecemos serviços de monitoramento, vendas e realização de projetos relacionados à segurança, incluindo a instalação de câmeras de vigilância.</p>
-                        <button class="btn" aria-label="Saiba mais sobre os projetos Segv">Saiba Mais</button>
-                    </div>
+                </article>
+
+                <article class="conteudo-ul hidden">
+                    <div class="division">
+                        <div class="box-container">
+                            <box-icon name='lock-alt' color='#2f5ca3' size="50px"></box-icon>
+                        </div>
+                        <div class="texto-container-2">
+                            <h2>Projetos de segurança</h2>
+                            <p>Somos uma empresa registrada no CREA, composta por Engenheiros Eletricistas e de Segurança, além de técnicos especializados prontos para atender a todas as suas necessidades em segurança. Oferecemos serviços de monitoramento, vendas e realização de projetos relacionados à segurança, incluindo a instalação de câmeras de vigilância.</p>
+                            <button class="btn" aria-label="Saiba mais sobre os projetos Segv">Saiba Mais</button>
+                        </div>
                         <div class="image-ul">
                             <img src="assets/Sem nome (1480 x 1920 px) (1).png" alt="">
                         </div>
                     </div>
-            </article>
+                </article>
+            </div>
         </div>
+
+        <div class="stats-section hidden-ler">
+            <div class="stat-item">
+                <h2 data-target="15">0</h2>
+                <p>De história</p>
+            </div>
+            <div class="stat-item">
+                <h2 data-target="30000">0</h2>
+                <p>Câmeras vendidas</p>
+            </div>
+            <div class="stat-item">
+                <h2 data-target="850">0</h2>
+                <p>Projetos executados</p>
+            </div>
+            <div class="stat-item">
+                <h2 data-target="100">0</h2>
+                <p>Projetos de grande porte</p>
+            </div>
         </div>
+
     </section>
 
-    <div class="stats-section">
-        <div class="stat-item">
-            <h2 data-target="15">0</h2>
-            <p>De história</p>
+    <section class="container-3" style="background-image: url(assets/segv-externo.png);">
+        
+        <div class="header-container-3">
+            <h1 class="hidden">Estrutura Completa</h1>
+            <h3 class="hidden">Criada para atender todas as necessidades dos clientes, a qualquer hora.</h3>
+            <p class="hidden">Garantimos qualidade e desempenho ao máximo, com a confiança e credibilidade que temos com tantos anos no mercado.</p>
+            <button class="hidden-ler">Entre em contato</button>
         </div>
-        <div class="stat-item">
-            <h2 data-target="30000">0</h2>
-            <p>Câmeras vendidas</p>
+
+    </section>
+
+    <section class="container-7">
+        <span class="intro-container">Nossas Parcerias</span>
+
+        <header>
+            <h1>Use a mesma tecnologia de segurança de grandes empresas do mercado</h1>
+            
+        </header>
+
+        <div class="parcerias-itens">
+
+            <div class="parceria-item" id="coca-cola-parceria">
+                <img src="assets/coca-cola.png" alt="Logo da Coca-Cola">
+                <p>Uma parceria com a Coca-Cola, unindo inovação e excelência para entregar experiências inesquecíveis.</p>
+            </div>
+
+            <div class="parceria-item" id="intelbras-parceria">
+                <img src="assets/intelbras.png" alt="Logo da Intelbras" id="logo-intel">
+                <p>Uma parceria com a Intelbras, tecnologia e segurança unidas para soluções inteligentes e confiáveis.</p>
+            </div>
+
+            <div class="parceria-item" id="mitsubishi-parceria">
+                <img src="assets/mitsubishi.png" alt="Logo da Mitsubishi" id="logo-mit">
+                <p>Uma parceria com a Mitsubishi, engenharia de precisão e inovação para impulsionar grandes conquistas.</p>
+            </div>
+
         </div>
-        <div class="stat-item">
-            <h2 data-target="850">0</h2>
-            <p>Projetos executados</p>
+
+    </section>
+
+    <section class="container-8">
+        <header>
+            <h1>Por que escolher a SegV?</h1>
+            <p>Aqui estão algumas palavras-chaves que dizem os motivos pelos quais somos a melhor opção para atender suas necessidades.</p>
+        </header>
+
+        <div class="cube-container">
+          <div class="cube">
+            <div class="face front"><span>Tecnologia</span></div>
+            <div class="face back">Experiência</div>
+            <div class="face right">Confiabilidade</div>
+            <div class="face left">Modernidade</div>
+            <div class="face top">Futuro</div>
+            <div class="face bottom">Inovação</div>
+          </div>
+        </div>        
+
+    </section>
+
+    <section class="container-5" id="container-5">
+
+        <span class="intro-container">Soluções Diversificadas</span>
+
+        <header>
+            <h1>Projetos Diversificados</h1>
+            <p>Proteção inteligente para projetos diversificados, garantindo excelência em segurança para cada desafio.</p>
+        </header>
+
+        <div class="slider">
+
+            <div class="slides">
+
+                <input type="radio" name="radio-btn" id="radio1">
+                <input type="radio" name="radio-btn" id="radio2">
+                <input type="radio" name="radio-btn" id="radio3">
+                <input type="radio" name="radio-btn" id="radio4">
+                <input type="radio" name="radio-btn" id="radio5">
+                <input type="radio" name="radio-btn" id="radio6">
+                <input type="radio" name="radio-btn" id="radio7">
+                <input type="radio" name="radio-btn" id="radio8">
+                <input type="radio" name="radio-btn" id="radio9">
+
+                <div class="slide first">
+                    <img src="assets/cidades-inteligentes.jpg" alt="Cidade Inteligente">
+                </div>
+                <div class="slide">
+                    <img src="assets/agro.jpg" alt="Agronegócio">
+                </div>
+                <div class="slide">
+                    <img src="assets/industria-4.jpg" alt="Indústria">
+                </div>
+                <div class="slide">
+                    <img src="assets/comercio.jpg" alt="Comércio">
+                </div>
+                <div class="slide">
+                    <img src="assets/clinica.jpg" alt="Centro Médico">
+                </div>
+                <div class="slide">
+                    <img src="assets/clinica.jpg" alt="Centro Médico">
+                </div>
+                <div class="slide">
+                    <img src="assets/clinica.jpg" alt="Centro Médico">
+                </div>
+                <div class="slide">
+                    <img src="assets/clinica.jpg" alt="Centro Médico">
+                </div>
+                <div class="slide">
+                    <img src="assets/clinica.jpg" alt="Centro Médico">
+                </div>
+
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                    <div class="auto-btn5"></div>
+                    <div class="auto-btn6"></div>
+                    <div class="auto-btn7"></div>
+                    <div class="auto-btn8"></div>
+                    <div class="auto-btn9"></div>
+                </div>
+
+                <div class="manual-navegation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                    <label for="radio4" class="manual-btn"></label>
+                    <label for="radio5" class="manual-btn"></label>
+                    <label for="radio6" class="manual-btn"></label>
+                    <label for="radio7" class="manual-btn"></label>
+                    <label for="radio8" class="manual-btn"></label>
+                    <label for="radio9" class="manual-btn"></label>
+                </div>
+
+            </div>
+
         </div>
-        <div class="stat-item">
-            <h2 data-target="100">0</h2>
-            <p>Projetos de grande porte</p>
-        </div>
+
+    </section>
+
+    <div class="vetores">
+        <div class="vetor-1"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#061733" fill-opacity="1" d="M0,96L120,133.3C240,171,480,245,720,234.7C960,224,1200,128,1320,80L1440,32L1440,0L1320,0C1200,0,960,0,720,0C480,0,240,0,120,0L0,0Z"></path></svg></div>
     </div>
 
-    <section class="container-3">
-        <img src="assets/download.png" alt="Segv internamente">
-        <div class="header-container-3">
-            <h1 class="animate">Estrutura completa</h1>
-            <h3 class="animate">criada para atender todas as necessidades dos clientes, a qualquer hora.</h3>
-            <p class="animate">Garantimos qualidade e desempenho ao máximo, com a confiança e credibilidade que temos com tantos anos no mercado.</p>
-            <button class="animate">Entre em contato</button>
-        </div>
-    </section>
+    <div class="ultima-parte">
 
-    <section class="container-4">
-        <div class="cabecalho-container-4">
-            <h1>A confiança que você vê, a segurança que você sente</h1>
-            <h2>Junte-se com uma das melhores do país.</h2>
+        <section class="container-6">
+            <span class="intro-container">Segurança Inteligente</span>
+    
+            <header>
+                <h1>A Tecnologia em Câmeras que mais se adapta a você!</h1>
+                <p>A tecnologia em câmeras que oferece máxima adaptação às suas necessidades!</p>
+            </header>
+    
+           
+             
+            <div class="cameras-itens">
+    
+                <div class="camera-item hidden">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                
+                        <div class="infotop">
+                            <img src="assets/camera-ip.png" alt="Câmera IP">
+                            <div class="texto-cam">
+                                <h3>Câmeras IP</h3>
+                                <p>Alta resolução e conectividade para acesso remoto, com qualidade de imagem e facilidade de uso para residências e empresas.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="camera-item hidden">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                
+                        <div class="infotop">
+                            <img src="assets/camera-analogica.webp" alt="Câmera Analógica">
+                            <div class="texto-cam">
+                                <h3>Câmeras Analógicas</h3>
+                                <p>Solução confiável e econômica. Perfeita para quem precisa de robustez e eficiência com instalação simplificada</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="camera-item hidden">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                
+                        <div class="infotop">
+                            <img src="assets/camera-speed.webp" alt="Câmera Speed Dome">
+                            <div class="texto-cam">
+                                <h3>Câmeras Speed Dome</h3>
+                                <p>Monitoramento 360° com pan, tilt e zoom avançados, ideal para grandes áreas e vigilância detalhada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="camera-item hidden">
+                    <div class="e-card playing">
+                        <div class="image"></div>
+                        
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        <div class="wave"></div>
+                        
+                
+                        <div class="infotop">
+                            <img src="assets/camera-bullet.png" alt="Câmera Bullet">
+                            <div class="texto-cam">
+                                <h3>Câmeras Bullet</h3>
+                                <p>Versatilidade para diversos ambientes. As Cãmeras Bullet são ideais para áreas externas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+    
+        </section>
+
+        <section class="container-4 conteudo-principal" id="container-4">
+            <img src="assets/download.png" alt="" id="img-tec" class="hidden">
+            <div class="conteudo-container-4">
+                <div class="texto-container-4">
+                    <span class="intro-container">experiência e confiabilidade</span>
+                    <h1>Defesa com Integração Tecnológica</h1>
+                    <p>Implementamos soluções de segurança integradas com tecnologia de ponta, conectando sistemas de monitoramento, controle de acesso e análise inteligente para uma proteção mais eficiente e confiável.</p>
+                </div>
+    
+                <div class="defensa-itens">
+                    <div class="defesa-item hidden">
+                        <div class="blob"></div> 
+                        <div class="bg"></div> 
+                        <img src="assets/Customize (2).png" alt="HTML5">
+                        <h3>Soluções Personalizadas</h3>
+                        <p>Criamos soluções de segurança sob medida, adaptadas às necessidades específicas de cada cliente.</p>
+                    </div>
+                    <div class="defesa-item hidden">
+                        <div class="blob"></div> 
+                        <div class="bg"></div> 
+                        <img src="assets/Threat (1).png" alt="CSS3">
+                        <h3>Avaliação de Vulnerabilidade</h3>
+                        <p>Identificamos e analisamos pontos frágeis em seus sistemas, oferecendo soluções para mitigar riscos e reforçar a segurança.</p>
+                    </div>
+                    <div class="defesa-item hidden">
+                        <div class="blob"></div> 
+                        <div class="bg"></div> 
+                        <img src="assets/24 Hours Service (1).png" alt="JavaScript">
+                        <h3>Serviço 24/7</h3>
+                        <p>Monitoramento e suporte contínuos, garantido proteção a qualquer hora, todos os dias.</p>
+                    </div>
+                    <div class="defesa-item hidden">
+                        <div class="blob"></div> 
+                        <div class="bg"></div> 
+                        <img src="assets/Training (1).png" alt="TailwindCSS">
+                        <h3>Profissionais Treinados</h3>
+                        <p>Equipe qualificada e preparada para oferecer soluções de segurança com eficiência e expertise.</p>
+                    </div>
+                </div>
+    
+            </div>
+        </section>
+
+    </div>
+
+    <footer class="rodape conteudo-principal">
+        <img src="assets/segv-logo-transformed.png" alt="Logo da SegV" id="logo-footer">
+
+        <div class="itens-footer">
+
+            <div class="contato">
+                <h3 class="title-itens-footer">contato</h3>
+                <div class="item-footer">
+                    <img src="assets/envelope-solid-24.png" alt="">
+                    <span class="texto-item-footer">(79) 3302-5552</span>
+                </div>
+                <div class="item-footer">
+                    <img src="assets/phone-solid-24.png" alt="">
+                    <span class="texto-item-footer">contato@segview.com.br</span>
+                </div>
+            </div>
+    
+            <div class="empresa">
+                <h3 class="title-itens-footer">empresa</h3>
+                <div class="item-footer empresaa">
+                    <img src="assets/building-solid-24.png" alt="">
+                    <span class="texto-item-footer">Rua Carlos Gomes, 397,<br>Ponto Novo,<br>CEP 49047-070</span>
+                </div>
+            </div>
+
+            <div class="social">
+                <h3 class="title-itens-footer">social</h3>
+                <div class="item-footer">
+                    <img src="assets/instagram-alt-logo-24.png" alt="">
+                    <span class="texto-item-footer"><a href="https://www.instagram.com/segv_seguranca/" target="_blank" style="text-decoration: none; color: white;">Instagram</a></span>
+                </div>
+            </div>
+
+            <div class="logo-footer-mobile">
+                <img src="assets/segv-logo-transformed.png" alt="" id="logo-footer-mobile">
+            </div>
+
         </div>
 
-        <div class="conteudo-container-4">
-            
-        </div>
-    </section>
+    </footer>
 
+    <footer class="copy conteudo-principal">
+        <p>Copyright © 2024 - Segview. Desenvolvido por CrystalCode. </p>
+    </footer>
 
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
     <script src="script.js"></script>
 </body>
 </html>
+           
