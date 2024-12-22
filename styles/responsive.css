@@ -8,113 +8,156 @@
         --shadow-h1: 1px 1px 4px black;
     }
 
-    #simbolo-menu-mobile {
+    .container-1 {
+        padding: var(--padding-section);
+    }
+
+    .main-container-1 h1 {
+        width: auto;
+    }
+
+    .main-container-1 {
+        text-align: center;
+    }
+
+    .buttons-container-1 {
+        justify-content: center;
+    }
+
+    .container-8 {
+        display: block;
+        padding: 20vh 5vh;
+    }
+
+    .container-8 header {
+        width: auto;
+        text-align: center;
+        margin-bottom: 16vh;
+    }
+
+    .container-8 h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .cube-container {
+        margin: 0 auto;
+    }
+
+    .cube-container:hover {
+        transform: scale(1.1);
+    }
+
+    .conteudo-ad-container-1 {
+        text-align: center;
+    }
+
+    .header-container-3 {
+        position: relative;
+        left: 0%;
+    }
+
+    .header-container-3 p {
+        width: auto;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    .buttons-service {
+        display: flex;
+        justify-content: center;
+        padding: var(--padding-section);
+    }
+
+    .container-ul {
         display: block;
     }
 
-    #simbolo-menu-mobile:hover {
-        opacity: 0.7;
+    .conteudo-ul {
+        width: auto;
+        height: auto;
     }
 
-    .container-1, .container-2, .container-3, .container-4 {
-        text-align: center;
-    }
-
-    #man-front {
+    .image-ul {
         display: none;
     }
 
-    .cabecalho {
-        padding: 4vh 5vh 0vh 5vh;
+    .texto-container-2 h2, .texto-container-2 p {
+        width: auto;
     }
 
-    .menu-cabecalho {
-        display: none;
+    .stats-section {
+        padding: 3vh 5vh;
+        gap: 2rem;
     }
 
-    .imagens-container-2 {
-        display: none;
+    .stat-item h2 {
+        font-size: 1.9rem;
     }
 
-    #img-tec {
-        display: none;
-    }
-
-    .button {
-        font-size: 12px;
-        text-align: center;
-    }
-
-    .cabecalho-sticky {
-        padding: 3.5vh 5vh;;
-    }
-
-    .menu-cabecalho-sticky {
-        display: none;
-    }
-
-    .container-2 span, .container-4 span {
-        text-transform: capitalize;
-    }
-
-    .texto-container-2 {
-        text-align: center;
-    }
-
-    .botao-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
-    .defensa-itens {
-        justify-content: center;
-        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    }
-
-    .container-2 h1, .container-4 h1{
-        margin-top: 0.5vh;
-    }
-
-    #logo-footer {
-        display: none;
-    }
-
-    .itens-footer {
-        display: block;
-        margin-left: 0;
-    }
-
-    .contato, .empresa {
-        margin-bottom: 4vh;
-    }
-
-    #logo-footer-mobile {
-        height: 7rem;
-        text-align: center;
-    }
-
-    .logo-footer-mobile {
-        margin-top: 6vh;
-        display: flex;
-        justify-content: center;
-    }
-
-    .copy {
+    .stat-item p {
         font-size: var(--font-p);
     }
-}
 
-@media screen and (max-width:768px){
-    :root {
-        --font-h1: 2rem;
-        --h1-bold: 700;
-        --font-p: 0.9rem;
-        --p-bold: 500;
-        --padding-section: 10vh 5vh;
-        --shadow-h1: 1px 1px 4px black;
+    .content ul li a {
+        border-radius: 7px;
+    }
+
+    #header-container-3 {
+        width: auto;
+        text-align: center;
+        padding: 0 3vh;
+    }
+
+    .parceria-item img {
+        width: 25vh;
+        height: 12vh;
+    }
+    
+    #coca-cola-parceria img {
+        width: 29vh;
+    }
+    
+    #mitsubishi-parceria img {
+        width: 18vh;
+    }
+
+    .container-6 {
+        padding: 10vh;
+    }
+
+    .container-4 {
+        text-align: center;
+    }
+
+    .texto-container-4 p {
+        text-align: center;
+    }
+
+    .slider {
+        width: 40vh;
+        height: 40vh;
+    }
+    
+    .slides {
+        height: 40vh;
+        margin-top: 7vh;
+    }
+    
+    .slide img {
+        width: 40vh;
+        height: 40vh;
+    }
+    
+    .manual-navegation {
+        width: 20px;
+        margin-top: 30vh;
+    }
+
+    .navigation-auto {
+        width: 20px;
+        margin-top: 30vh;
     }
 
     #simbolo-menu-mobile {
@@ -125,14 +168,6 @@
         opacity: 0.7;
     }
 
-    .container-1, .container-2, .container-3, .container-4 {
-        text-align: center;
-    }
-
-    #man-front {
-        display: none;
-    }
-
     .cabecalho {
         padding: 4vh 5vh 0vh 5vh;
     }
@@ -141,17 +176,8 @@
         display: none;
     }
 
-    .imagens-container-2 {
-        display: none;
-    }
-
     #img-tec {
         display: none;
-    }
-
-    .button {
-        font-size: 12px;
-        text-align: center;
     }
 
     .cabecalho-sticky {
@@ -162,29 +188,9 @@
         display: none;
     }
 
-    .container-2 span, .container-4 span {
-        text-transform: capitalize;
-    }
-
-    .texto-container-2 {
-        text-align: center;
-    }
-
-    .botao-container {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        text-align: center;
-        align-items: center;
-    }
-
     .defensa-itens {
         justify-content: center;
         grid-template-columns: repeat(auto-fit, minmax(300px, auto));
-    }
-
-    .container-2 h1, .container-4 h1{
-        margin-top: 0.5vh;
     }
 
     #logo-footer {
