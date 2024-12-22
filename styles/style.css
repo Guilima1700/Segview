@@ -1,6 +1,6 @@
 :root {
     --font-h1: 2.6rem;
-    --h1-bold: 700;
+    --h1-bold: 720;
     --font-p: 1.1rem;
     --p-bold: 500;
     --padding-section: 15vh 20vh;
@@ -164,21 +164,21 @@ body::-webkit-scrollbar-thumb {
 .main-container-1 h1 {
     margin-bottom: 0.5rem;
     z-index: 1;
-    font-size: 70px;
-    width: 90rem;
+    font-size: var(--font-h1);
+    width: 57rem;
     font-weight: 900;
     color: #fff;
 }
 
 .main-container-1 p {
-    font-size: 20px;
+    font-size: var(--font-p);
     color: #fff;
     margin-bottom: 1.5rem;
 }
 
 .main-container-1 button {
     justify-content: center;
-    font-size: 16px;
+    font-size: var(--font-p);
     border: none;
     color: #fff;
     background: none;
@@ -238,7 +238,7 @@ body::-webkit-scrollbar-thumb {
 .parallax {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 65vh;
     background-image: url('../assets/download.png');
     background-attachment: fixed;
     background-position: center;
@@ -262,15 +262,6 @@ body::-webkit-scrollbar-thumb {
     pointer-events: none;
 }
 
-.container-2 {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    padding-top: 2rem;
-    background: radial-gradient(circle, #004080 0%, #00274d 60%, #001a33 100%);
-    height: 140dvh;
-}
-
 .intro-container {
     color: var(--color-p-one);
     font-weight: 600;
@@ -279,7 +270,10 @@ body::-webkit-scrollbar-thumb {
 
 .container-2 {
     padding: var(--padding-section);
-    background-color: var(--color-three);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: radial-gradient(circle, #004080 0%, #00274d 60%, #001a33 100%);
 }
 
 .content {
@@ -292,7 +286,7 @@ body::-webkit-scrollbar-thumb {
 
 .content h1 {
     margin-top: 1rem;
-    font-size: 38px;
+    font-size: var(--font-h1);
     background: linear-gradient(to right, rgb(129, 164, 221), #aaffff);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -302,8 +296,8 @@ body::-webkit-scrollbar-thumb {
 .content p {
     margin-bottom: 4rem;
     color: var(--color-p-one);
-    font-size: 17px;
-    font-weight: bold;
+    font-size: var(--font-p);
+    font-weight: var(--p-bold);
 }
 
 .content ul {
@@ -416,10 +410,11 @@ body::-webkit-scrollbar-thumb {
     border: none;
     cursor: pointer;
     font-size: 14px;
-    background-color: rgb(129, 164, 221);
+    background: transparent;
     color: var(--color-p-one);
     text-decoration: none;
     font-weight: var(--h1-bold);
+    border: 2px solid rgb(39, 88, 167);
     border-radius: 5px;
     transition: background-color 0.3s ease;
 }
@@ -450,7 +445,6 @@ body::-webkit-scrollbar-thumb {
 }
 
 .stats-section {
-    width: 80rem;
     background: rgba( 74, 144, 226, 0.1 );
     box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
     backdrop-filter: blur( 5.5px );
@@ -458,11 +452,12 @@ body::-webkit-scrollbar-thumb {
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );    border-radius: 20px;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 8rem; 
     margin: 0 auto;
-    gap: 8rem;
     align-items: center;
-    padding: 2rem;
+    padding: 4vh 16vh;
     margin-bottom: 4rem;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -512,9 +507,9 @@ body::-webkit-scrollbar-thumb {
 }
 
 .header-container-3 {
-    margin-left: 14%;
+    left: 14%;
     z-index: 1;
-    position: relative;
+    position: absolute;
 }
 
 .header-container-3 h1 {
@@ -638,9 +633,7 @@ body::-webkit-scrollbar-thumb {
 
 .container-4 {
     padding: var(--padding-section);
-    
     display: flex;
-    color: white;
     gap: 10vh;
     align-items: center;
 }
@@ -653,7 +646,6 @@ body::-webkit-scrollbar-thumb {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-bottom: 0.5vh;
-    margin-bottom: 2vh;
 }
 
 .texto-container-4 p {
@@ -715,11 +707,12 @@ body::-webkit-scrollbar-thumb {
     margin-top: 1.5vh;
     z-index: 5;
     position: relative;
-    color: var(--color-p-one);
+    color: var(--color-one);
 }
 
 .container-4 span {
     text-transform: uppercase;
+    color: var(--color-one);
 }
 
 .bg {
@@ -843,24 +836,28 @@ body::-webkit-scrollbar-thumb {
 .container-5 {
     padding: var(--padding-section);
     text-align: center;
-    background-color: var(--color-one);
 }
 
 .container-5 h1 {
     font-weight: var(--h1-bold);
     font-size: var(--font-h1);
     margin-top: 0.5vh;
-    background: linear-gradient(to right, rgb(47, 92, 163), #aaffff);
+    background: linear-gradient(to right, rgb(47, 92, 163), #257474);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    margin-bottom: 0.5vh;
 }
 
 .container-5 header p {
-    color: var(--color-p-two);
+    color: var(--color-one);
     font-size: var(--font-p);
     margin-bottom: 1rem;
     font-weight: var(--p-bold);
     margin-top: 0.5vh;
+}
+
+.container-5 span {
+    color: var(--color-one);
 }
 
 .slider {
@@ -882,6 +879,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .slide {
+    border-radius: 15px;
     width: 25%;
     position: relative;
     transition: 3s;
@@ -957,7 +955,7 @@ body::-webkit-scrollbar-thumb {
     padding: 5px;
     border-radius: 10px;
     cursor: pointer;
-    transition: 0.5s;
+    transition: 0.3s;
 }
 
 .navigation-auto {
@@ -1009,7 +1007,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .ultima-parte {
-    background: linear-gradient(to top, #cccabd 60%, #aaffff);
+    background: linear-gradient(to top, #cccabd 87%, #aaffff);
 }
 
 .container-6 {
@@ -1030,6 +1028,10 @@ body::-webkit-scrollbar-thumb {
 .container-6 header p {
     font-size: var(--font-p);
     font-weight: var(--p-bold);
+    color: var(--color-one);
+}
+
+.container-6 span {
     color: var(--color-one);
 }
 
@@ -1172,7 +1174,7 @@ body::-webkit-scrollbar-thumb {
 .container-7 header p {
     font-size: var(--font-p);
     font-weight: var(--p-bold);
-    color: var(--color-p-two);
+    color: var(--color-p-one);
     margin-top: 0.5vh;
 }
 
@@ -1189,10 +1191,12 @@ body::-webkit-scrollbar-thumb {
     margin-top: 10vh;
 }
 
-.parceria-item p {
-    color: var(--color-p-one);
-    margin-top: 2vh;
-    font-weight: var(--p-bold);
+#coca-cola-parceria img {
+    width: 38vh;
+}
+
+#mitsubishi-parceria img {
+    width: 27vh;
 }
 
 .cube-container {
@@ -1271,6 +1275,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .container-8 {
+    background: linear-gradient(#061733, #092147);
     padding: 25vh 20vh;
     display: flex;
     background-size: cover;
