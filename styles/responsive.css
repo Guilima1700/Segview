@@ -32,19 +32,10 @@
     .container-8 header {
         width: auto;
         text-align: center;
-        margin-bottom: 16vh;
     }
 
     .container-8 h1 {
         margin-bottom: 0.5rem;
-    }
-
-    .cube-container {
-        margin: 0 auto;
-    }
-
-    .cube-container:hover {
-        transform: scale(1.1);
     }
 
     .conteudo-ad-container-1 {
