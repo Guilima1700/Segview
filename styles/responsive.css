@@ -12,8 +12,17 @@
         padding: var(--padding-section);
     }
 
+    #conteudo-container-1 {
+        margin-left: 0;
+    }
+
     .main-container-1 h1 {
         width: auto;
+        font-size: var(--font-h1);
+    }
+
+    .main-container-1 p {
+        font-size: 1.1rem;
     }
 
     .main-container-1 {
@@ -24,9 +33,29 @@
         justify-content: center;
     }
 
+    .cards-container {
+        display: none;
+    }
+
     .container-8 {
         display: block;
-        padding: 20vh 5vh;
+        width: 100%;
+        padding: 9vh 5vh;
+    }
+
+    .service-item h3 {
+        font-size: 0.9rem;
+        width: auto;
+        max-width: 40vh;
+        white-space: wrap;
+    }
+
+    .service-item img {
+        width: 45px;
+    }
+
+    #header-container-3 {
+        text-align: center;
     }
 
     .container-8 header {
@@ -55,10 +84,13 @@
         padding: 0;
     }
 
-    .buttons-service {
+    #buttons-service {
+        text-align: block;
+    }
+
+    .options-service {
         display: flex;
         justify-content: center;
-        padding: var(--padding-section);
     }
 
     .container-ul {
@@ -79,7 +111,9 @@
     }
 
     .stats-section {
-        padding: 3vh 5vh;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3vh 6vh;
         gap: 2rem;
     }
 
@@ -101,6 +135,10 @@
         padding: 0 3vh;
     }
 
+    .container-7 {
+        padding: 7vh 5vh;
+    }
+
     .parceria-item img {
         width: 25vh;
         height: 12vh;
@@ -114,11 +152,79 @@
         width: 18vh;
     }
 
+    .container-9 {
+        display: block;
+        text-align: center;
+    }
+
+    .container-9 p {
+        text-align: center;
+    }
+
+    .container-9 img {
+        width: 42.5vh;
+        height: 33vh;
+        margin-top: 3.5vh;
+    }
+
+    .container-9 header {
+        width: auto;
+    }
+
     .container-6 {
-        padding: 10vh;
+        padding: 10vh 5vh 15vh 5vh;
+        display: block;
+        text-align: center;
+    }
+
+    .map-container {
+        min-width: 75vh;
+    }
+
+    .mapa {
+        width: 100%;
+        display: flex;
+    }
+    
+    .map-background {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .map-background image {
+        width: 58%;
+    }
+
+    .text-container-6 header p {
+        width: auto;
+        text-align: center;
+    }
+
+    .text-container-6 {
+        margin-top: 0;
+    }
+
+    .container-mei {
+        display: block;
+        padding: 5vh;
+        height: auto;
+    }
+
+    .text-container-mei h1 {
+        margin-top: 0;
+    }
+
+    .text-container-mei p {
+        text-align: center;
+    }
+
+    .conteudo-container-mei img {
+        display: none;
     }
 
     .container-4 {
+        padding: var(--padding-section);
         text-align: center;
     }
 
@@ -127,55 +233,29 @@
     }
 
     .slider {
-        width: 40vh;
+        width: 42vh;
         height: 40vh;
     }
     
     .slides {
         height: 40vh;
-        margin-top: 7vh;
+        margin-top: 4vh;
     }
     
     .slide img {
-        width: 40vh;
+        width: 42vh;
         height: 40vh;
     }
     
-    .manual-navegation {
-        width: 20px;
-        margin-top: 30vh;
+    .manual-navegation, .navigation-auto {
+        opacity: 0;
     }
 
-    .navigation-auto {
-        width: 20px;
-        margin-top: 30vh;
-    }
-
-    #simbolo-menu-mobile {
-        display: block;
-    }
-
-    #simbolo-menu-mobile:hover {
-        opacity: 0.7;
-    }
-
-    .cabecalho {
-        padding: 4vh 5vh 0vh 5vh;
-    }
-
-    .menu-cabecalho {
-        display: none;
+    .navigation-auto div {
+        transition: 0.1s;
     }
 
     #img-tec {
-        display: none;
-    }
-
-    .cabecalho-sticky {
-        padding: 3.5vh 5vh;;
-    }
-
-    .menu-cabecalho-sticky {
         display: none;
     }
 
@@ -210,5 +290,29 @@
 
     .copy {
         font-size: var(--font-p);
+    }
+
+    #simbolo-menu-mobile {
+        display: block;
+    }
+
+    #simbolo-menu-mobile:hover {
+        opacity: 0.7;
+    }
+
+    .cabecalho {
+        padding: 4vh 5vh 0vh 5vh;
+    }
+
+    .cabecalho-sticky {
+        padding: 3.5vh 5vh;;
+    }
+
+    .menu-cabecalho-sticky {
+        display: none;
+    }
+
+    #btn-menu:hover {
+        background: transparent;
     }
 }

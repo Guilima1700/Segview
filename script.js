@@ -1,15 +1,17 @@
+let video = document.querySelector('video');
 
-function lerMais(){
-    document.getElementById('mais-texto').style.display = 'block';
-    document.getElementById('botao-ler-mais').style.display = 'none';
-    document.getElementById('botao-ler-menos').style.display = 'block';
-}
+window.addEventListener('scroll' , function(){
+    let value = 1 + this.window.scrollY/-700;
+    video.style.opacity = value;
+});
 
-function lerMenos(){
-    document.getElementById('mais-texto').style.display = 'none';
-    document.getElementById('botao-ler-menos').style.display = 'none';
-    document.getElementById('botao-ler-mais').style.display = 'block';
-}
+let text = document.getElementById('conteudo-container-1');
+
+window.addEventListener('scroll' , function(){
+    let value = 1 + this.window.scrollY/-700;
+    text.style.opacity = value;
+});
+
 
 document.addEventListener('scroll', function () {
     const menu = document.getElementById('cabecalho');
@@ -23,6 +25,7 @@ document.addEventListener('scroll', function () {
         itensMenu.classList.add('menu-cabecalho-sticky');
         logo.classList.remove('logo');
         logo.classList.add('logo-sticky');
+        menuMobile.style.display = 'none';
     } else {
         menu.classList.remove('cabecalho-sticky');
         itensMenu.classList.add('menu-cabecalho');
@@ -32,53 +35,38 @@ document.addEventListener('scroll', function () {
     }
 });
 
-const elementosScroll= document.querySelectorAll('.hidden');
+const elementosScroll = document.querySelectorAll('.hidden');
 const scrollLerMais = document.querySelectorAll('.hidden-ler');
 
-const myObserver = new IntersectionObserver((entries) => {
+const myObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
-        if (entry.isIntersecting){
-            entry.target.classList.add('show')
-        } else {
-            entry.target.classList.remove('show')
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target); 
         }
-    })
+    });
 });
 
-elementosScroll.forEach((elementos) => myObserver.observe(elementos));
+elementosScroll.forEach((elemento) => myObserver.observe(elemento));
 scrollLerMais.forEach((ler) => myObserver.observe(ler));
 
-const menuMobile = document.getElementById('menu-mobile');
-const simboloMenuMobile = document.getElementById('simbolo-menu-mobile');
-const simboloFecharMenu = document.getElementById('fechar-menu-mobile');
-const itensMenu = document.querySelectorAll('.item-mobile a');
-const conteudoPag = document.querySelectorAll('.conteudo-principal');
+document.addEventListener("DOMContentLoaded", () => {
+    const elements = document.querySelectorAll(".animate");
 
-function toggleVisibilidadeConteudo(ocultar) {
-    conteudoPag.forEach(elemento => {
-        elemento.classList.toggle('ocultar', ocultar);
+    const observer = new IntersectionObserver(
+        (entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add("visible");
+                }
+            });
+        },
+        { threshold: 0.5 }
+    );
+
+    elements.forEach((element) => {
+        observer.observe(element);
     });
-}
-
-function abrirMenu() {
-    menuMobile.style.display = 'block';
-    simboloMenuMobile.style.display = 'none';
-    simboloFecharMenu.style.display = 'block';
-    toggleVisibilidadeConteudo(true); 
-    document.querySelectorAll('.item-mobile').forEach(item => item.classList.add('hidden'));
-}
-
-function fecharMenu() {
-    menuMobile.style.display = 'none';
-    simboloFecharMenu.style.display = 'none';
-    simboloMenuMobile.style.display = 'block';
-    toggleVisibilidadeConteudo(false); 
-}
-
-menuMobile.addEventListener('click', (event) => {
-    if (event.target.tagName === 'A') {
-        fecharMenu();
-    }
 });
 
 document.addEventListener("DOMContentLoaded", () => {
@@ -188,3 +176,77 @@ function nextImage(){
     document.getElementById('radio' + count).checked = true;
 
 }
+
+const mediaQuery = window.matchMedia("(max-width: 576px)");
+function handleScreenChange(e) {
+
+    if (e.matches) {
+        setInterval(function(){
+            nextImage();
+        }, 4000);
+    } else {
+        setInterval(function(){
+            nextImage();
+        }, 5000);
+    }
+
+}
+
+mediaQuery.addEventListener("change", handleScreenChange);
+handleScreenChange(mediaQuery);
+
+const menuPc = document.getElementById('menu-cabecalho');
+const simboloAbrirMenu = document.getElementById('simbolo-menu-mobile');
+const menuMobile = document.getElementById('menu-mobile');
+const simboloFechar = document.getElementById('fechar-menu-mobile');
+
+function toggleMenu() {
+    if (window.matchMedia("(max-width: 576px)").matches) {
+        menuPc.style.display = "none"; 
+        simboloAbrirMenu.display = 'block';
+    } else {
+        menuPc.style.display = "flex";
+        simboloAbrirMenu.display = 'none';
+        menuMobile.style.display = 'none';
+        simboloFechar.style.display = 'none';
+    }
+}
+
+toggleMenu();
+window.addEventListener("resize", toggleMenu);
+
+const simboloMenuMobile = document.getElementById('simbolo-menu-mobile');
+const simboloFecharMenu = document.getElementById('fechar-menu-mobile');
+const itensMenu = document.querySelectorAll('.item-mobile a');
+const conteudoPrincipal = document.querySelectorAll('.conteudo-principal')
+
+function toggleVisibilidadeConteudo(ocultar) {
+    conteudoPrincipal.forEach(elemento => {
+        elemento.classList.toggle('ocultar', ocultar);
+    });
+}
+
+function abrirMenu() {
+    menuMobile.style.display = 'block';
+    simboloMenuMobile.style.display = 'none';
+    simboloFecharMenu.style.display = 'block';
+}
+
+function fecharMenu() {
+    menuMobile.style.display = 'none'
+    simboloFecharMenu.style.display = 'none';
+    simboloMenuMobile.style.display = 'block';
+}
+
+const elementosScrollMobile = document.querySelectorAll('.hidden-mobile');
+const myObserverMobile = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        if (entry.isIntersecting){
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+});
+
+elementosScrollMobile.forEach((elementosMobile) => myObserverMobile.observe(elementosMobile));
