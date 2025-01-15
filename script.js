@@ -351,41 +351,21 @@ locais.forEach(local => {
 
 
 
-let currentIndex = 0;
-const slides = document.querySelectorAll('.ci');
-const totalSlides = slides.length;
+const container = document.querySelector('.c');
+const cardss = document.querySelectorAll('.ci');
 
-function showSlide(index) {
-    slides.forEach((slide, i) => {
-        slide.style.display = (i === index) ? 'block' : 'none';
+container.addEventListener('scroll', () => {
+  clearTimeout(container.dataset.timeout);
+
+  container.dataset.timeout = setTimeout(() => {
+    const scrollPosition = container.scrollLeft;
+    const cardWidth = cardss[0].offsetWidth + 16;
+
+    const index = Math.round(scrollPosition / cardWidth);
+
+    container.scrollTo({
+      left: index * cardWidth,
+      behavior: 'smooth',
     });
-}
-
-function nextSlide() {
-    currentIndex = (currentIndex + 1) % totalSlides;
-    showSlide(currentIndex);
-}
-
-function prevSlide() {
-    currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-    showSlide(currentIndex);
-}
-
-// Touch event handlers
-let startX;
-
-document.addEventListener('touchstart', (event) => {
-    startX = event.touches[0].clientX;
+  }, 150);
 });
-
-document.addEventListener('touchmove', (event) => {
-    const moveX = event.touches[0].clientX;
-    if (startX - moveX > 50) {
-        nextSlide();
-    } else if (moveX - startX > 50) {
-        prevSlide();
-    }
-});
-
-// Inicializa a primeira imagem
-showSlide(currentIndex);
