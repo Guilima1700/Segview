@@ -1,0 +1,1531 @@
+@media screen and (max-width:576px){
+    :root {
+        --font-h1: 2rem;
+        --h1-bold: 700;
+        --font-p: 0.9rem;
+        --p-bold: 500;
+        --padding-section: 10vh 5vh;
+        --shadow-h1: 1px 1px 4px black;
+    }
+
+    .container-1 {
+        padding: var(--padding-section);
+    }
+
+    #conteudo-container-1 {
+        margin-left: 0;
+    }
+
+    .main-container-1 h1 {
+        width: auto;
+        font-size: var(--font-h1);
+    }
+
+    .main-container-1 p {
+        font-size: 1.1rem;
+    }
+
+    .main-container-1 {
+        text-align: center;
+    }
+
+    .buttons-container-1 {
+        justify-content: center;
+    }
+
+    .cards-container {
+        display: none;
+    }
+
+    .container-8 {
+        display: block;
+        overflow-x: hidden;
+        padding: 9vh 5vh;
+    }
+
+    .service-item h3 {
+        font-size: 0.9rem;
+        width: 12rem;
+    }
+
+    .service-item img {
+        width: 45px;
+    }
+
+    #header-container-3 {
+        text-align: center;
+    }
+
+    .container-8 header {
+        width: auto;
+        text-align: center;
+    }
+
+    .container-8 h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .conteudo-ad-container-1 {
+        text-align: center;
+    }
+
+    .header-container-3 {
+        position: relative;
+        left: 0%;
+    }
+
+    .header-container-3 p {
+        width: auto;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    #buttons-service {
+        text-align: block;
+    }
+
+    .options-service {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-ul {
+        display: block;
+    }
+
+    .conteudo-ul {
+        width: auto;
+        height: auto;
+    }
+
+    .image-ul {
+        display: none;
+    }
+
+    .texto-container-2 h2, .texto-container-2 p {
+        width: auto;
+    }
+
+    .stats-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3vh 6vh;
+        gap: 2rem;
+    }
+
+    .stat-item h2 {
+        font-size: 1.9rem;
+    }
+
+    .stat-item p {
+        font-size: var(--font-p);
+    }
+
+    .content ul li a {
+        border-radius: 7px;
+    }
+
+    #header-container-3 {
+        width: auto;
+        text-align: center;
+        padding: 0 3vh;
+    }
+
+    .container-7 {
+        padding: 7vh 5vh;
+    }
+
+    .parceria-item img {
+        width: 25vh;
+        height: 12vh;
+    }
+
+    .parcerias-itens {
+        gap: 2.5rem;
+    }
+    
+    #coca-cola-parceria img {
+        width: 29vh;
+    }
+    
+    #mitsubishi-parceria img {
+        width: 18vh;
+    }
+
+    .container-9 {
+        padding: var(--padding-section);
+        display: block;
+        text-align: center;
+    }
+
+    .container-9 p {
+        text-align: center;
+    }
+
+    .container-9 img {
+        width: 42.5vh;
+        height: 33vh;
+        margin-top: 3.5vh;
+    }
+
+    .container-9 header {
+        width: auto;
+    }
+
+    .container-6 {
+        padding: 10vh 5vh 15vh 5vh;
+        display: block;
+        text-align: center;
+    }
+
+    .container-6 video {
+        width: 20rem;
+        border-radius: 3vh;
+        height: auto;
+    }
+
+    .text-container-6 header p {
+        width: auto;
+        text-align: center;
+    }
+
+    .text-container-6 {
+        margin-top: 0;
+    }
+
+    .container-11 {
+        display: block;
+        text-align: center;
+    }
+
+    .container-11 header {
+        width: auto;
+        margin-bottom: 5vh;
+    }
+
+    .container-11 p {
+        text-align: center;
+    }
+
+    #mapa-brasil {
+        width: 35vh;
+        margin: 0 auto;
+    }
+
+    .container-mei {
+        background: radial-gradient(circle, #004080 0%, #00274d 65%, #001a33 100%);
+        margin: 0;
+        display: block;
+        padding: 5vh;
+        height: auto;
+    }
+
+    .text-container-mei h1 {
+        margin-top: 0;
+    }
+
+    .text-container-mei p {
+        text-align: center;
+    }
+
+    .conteudo-container-mei {
+        display: none;
+    }
+
+    .container-4 {
+        padding: var(--padding-section);
+        text-align: center;
+    }
+
+    .texto-container-4 p {
+        text-align: center;
+    }
+
+    .container-10 {
+        padding: 10vh 0;
+    }
+
+    .container-10 header {
+        padding: 0 5vh;
+    }
+
+    .carousel__item {
+        width: 22vh;
+        height: 17vh;
+    }
+
+    .c {
+        width: 310px;
+        height: 200px;
+        padding-bottom: 15px;
+    }
+
+    .label-slide {
+        width: 8%;
+        height: 7px;
+    }
+
+    #img-tec {
+        display: none;
+    }
+
+    .defensa-itens {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+    #logo-footer {
+        display: none;
+    }
+
+    .itens-footer {
+        display: block;
+        margin-left: 0;
+    }
+
+    .contato, .empresa {
+        margin-bottom: 4vh;
+    }
+
+    #logo-footer-mobile-2 {
+        height: 7rem;
+        text-align: center;
+    }
+
+    .logo-footer-mobile-2 {
+        margin-top: 6vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy {
+        font-size: var(--font-p);
+    }
+
+    .play-button img, .pause-button img {
+        margin-top: 0.3vh;
+        width: 25px;
+        height: 45px;
+    }
+
+    .phone-container {
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+
+    #simbolo-menu-mobile {
+        display: block;
+    }
+
+    #simbolo-menu-mobile:hover {
+        opacity: 0.7;
+    }
+
+    .cabecalho {
+        padding: 4vh 5vh 0vh 5vh;
+    }
+
+    .cabecalho-sticky {
+        padding: 3.5vh 5vh;;
+    }
+
+    .menu-cabecalho-sticky {
+        display: none;
+    }
+
+    #btn-menu:hover {
+        background: transparent;
+    }
+
+    .conteudo-ad-container-1, .container-3, .container-11 {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (min-width: 576.1px) and (max-width: 768px){
+    :root {
+        --font-h1: 2rem;
+        --h1-bold: 700;
+        --font-p: 0.9rem;
+        --p-bold: 500;
+        --padding-section: 10vh 5vh;
+        --shadow-h1: 1px 1px 4px black;
+    }
+
+    .container-1 {
+        padding: var(--padding-section);
+    }
+
+    #conteudo-container-1 {
+        margin-left: 0;
+    }
+
+    .main-container-1 h1 {
+        width: auto;
+        font-size: var(--font-h1);
+    }
+
+    .main-container-1 p {
+        font-size: 1.1rem;
+    }
+
+    .main-container-1 {
+        text-align: center;
+    }
+
+    .buttons-container-1 {
+        justify-content: center;
+    }
+
+    .cards-container {
+        display: none;
+    }
+
+    .container-8 {
+        display: block;
+        width: 100%;
+        padding: 9vh 5vh;
+    }
+
+    .service-item h3 {
+        font-size: 0.9rem;
+        width: 12rem;
+    }
+
+    .service-item img {
+        width: 45px;
+    }
+
+    #header-container-3 {
+        text-align: center;
+    }
+
+    .container-8 header {
+        width: auto;
+        text-align: center;
+    }
+
+    .container-8 h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .conteudo-ad-container-1 {
+        text-align: center;
+    }
+
+    .header-container-3 {
+        position: relative;
+        left: 0%;
+    }
+
+    .header-container-3 p {
+        width: auto;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    #buttons-service {
+        text-align: block;
+    }
+
+    .options-service {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-ul {
+        display: block;
+    }
+
+    .conteudo-ul {
+        width: auto;
+        height: auto;
+    }
+
+    .image-ul {
+        display: none;
+    }
+
+    .texto-container-2 h2, .texto-container-2 p {
+        width: auto;
+    }
+
+    .stats-section {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3vh 6vh;
+        gap: 2rem;
+    }
+
+    .stat-item h2 {
+        font-size: 1.9rem;
+    }
+
+    .stat-item p {
+        font-size: var(--font-p);
+    }
+
+    .content ul li a {
+        border-radius: 7px;
+    }
+
+    #header-container-3 {
+        width: auto;
+        text-align: center;
+        padding: 0 3vh;
+    }
+
+    .container-7 {
+        padding: 7vh 5vh;
+    }
+
+    .parceria-item img {
+        width: 25vh;
+        height: 12vh;
+    }
+
+    .parcerias-itens {
+        gap: 2.5rem;
+    }
+    
+    #coca-cola-parceria img {
+        width: 29vh;
+    }
+    
+    #mitsubishi-parceria img {
+        width: 18vh;
+    }
+
+    .container-9 {
+        padding: var(--padding-section);
+        display: block;
+        text-align: center;
+    }
+
+    .container-9 p {
+        text-align: center;
+    }
+
+    .container-9 img {
+        width: 42.5vh;
+        height: 33vh;
+        margin-top: 3.5vh;
+    }
+
+    .container-9 header {
+        width: auto;
+    }
+
+    .container-6 {
+        padding: 10vh 5vh 15vh 5vh;
+        display: block;
+        text-align: center;
+    }
+
+    .container-6 video {
+        width: 25rem;
+        border-radius: 3vh;
+        height: auto;
+    }
+
+    .text-container-6 header p {
+        width: auto;
+        text-align: center;
+    }
+
+    .text-container-6 {
+        margin-top: 0;
+    }
+
+    .container-11 {
+        display: block;
+        text-align: center;
+    }
+
+    .container-11 header {
+        width: auto;
+        margin-bottom: 5vh;
+    }
+
+    .container-11 p {
+        text-align: center;
+    }
+
+    #mapa-brasil {
+        width: 35vh;
+        margin: 0 auto;
+    }
+
+    .container-mei {
+        margin: 0;
+        display: block;
+        padding: 5vh;
+        height: auto;
+    }
+
+    .text-container-mei h1 {
+        margin-top: 0;
+    }
+
+    .text-container-mei p {
+        text-align: center;
+    }
+
+    .conteudo-container-mei {
+        display: none;
+    }
+
+    .container-4 {
+        padding: var(--padding-section);
+        text-align: center;
+    }
+
+    .texto-container-4 p {
+        text-align: center;
+    }
+
+    .container-10 {
+        padding: 10vh 0;
+    }
+
+    .container-10 header {
+        padding: 0 5vh;
+    }
+
+    .carousel__item {
+        width: 22vh;
+        height: 17vh;
+    }
+
+    .c {
+        width: 330px;
+        height: 200px;
+        padding-bottom: 15px;
+    }
+
+    .label-slide {
+        width: 8%;
+        height: 7px;
+    }
+
+    #img-tec {
+        display: none;
+    }
+
+    .defensa-itens {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+    #logo-footer {
+        display: none;
+    }
+
+    .footer-itens {
+        display: flex;
+        justify-content: center;
+    }
+
+    .contato, .empresa {
+        margin-bottom: 4vh;
+    }
+
+    #logo-footer-mobile {
+        height: 7rem;
+        text-align: center;
+    }
+
+    .rodape {
+        display: block;
+    }
+
+    .logo-footer-mobile {
+        margin-top: 6vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy {
+        font-size: var(--font-p);
+    }
+
+    .play-button img, .pause-button img {
+        margin-top: 0.3vh;
+        width: 25px;
+        height: 45px;
+    }
+
+    .phone-container {
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+
+    #simbolo-menu-mobile {
+        display: block;
+    }
+
+    #simbolo-menu-mobile:hover {
+        opacity: 0.7;
+    }
+
+    .cabecalho {
+        padding: 4vh 5vh 0vh 5vh;
+    }
+
+    .cabecalho-sticky {
+        padding: 3.5vh 5vh;;
+    }
+
+    .menu-cabecalho-sticky {
+        display: none;
+    }
+
+    #btn-menu:hover {
+        background: transparent;
+    }
+
+    .conteudo-ad-container-1, .container-3, .container-11 {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (min-width: 576.1px) and (max-width: 768px){
+    .container-8 {
+        display: block;
+        width: 100%;
+        padding: 9vh 5vh;
+    }
+
+    .service-item h3 {
+        font-size: 0.9rem;
+        width: 12rem;
+    }
+
+    .service-item img {
+        width: 45px;
+    }
+
+    .conteudo-container-mei {
+        height: auto;
+        padding: 5vh;
+    }
+
+    #logo-footer {
+        display: none;
+    }
+
+    .itens-footer {
+        display: block;
+        margin-left: 0;
+    }
+
+    .contato, .empresa {
+        margin-bottom: 4vh;
+    }
+
+    #logo-footer-mobile {
+        height: 7rem;
+        text-align: center;
+    }
+
+    .logo-footer-mobile {
+        margin-top: 6vh;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768.1px) and (max-width: 992px){
+    :root {
+        --font-h1: 2rem;
+        --h1-bold: 700;
+        --font-p: 0.9rem;
+        --p-bold: 500;
+        --padding-section: 10vh 5vh;
+        --shadow-h1: 1px 1px 4px black;
+    }
+
+    .container-1 {
+        padding: var(--padding-section);
+    }
+
+    #conteudo-container-1 {
+        margin-left: 0;
+    }
+
+    .main-container-1 h1 {
+        width: auto;
+        font-size: var(--font-h1);
+    }
+
+    .main-container-1 p {
+        font-size: 1.1rem;
+    }
+
+    .main-container-1 {
+        text-align: center;
+    }
+
+    .buttons-container-1 {
+        justify-content: center;
+    }
+
+    .cards-container {
+        display: none;
+    }
+
+    .container-8 {
+        display: block;
+        width: 100%;
+        padding: 9vh 5vh;
+    }
+
+    .service-item h3 {
+        font-size: 0.9rem;
+        width: 12rem;
+    }
+
+    .service-item img {
+        width: 45px;
+    }
+
+    #header-container-3 {
+        text-align: center;
+    }
+
+    .container-8 header {
+        width: auto;
+        text-align: center;
+    }
+
+    .container-8 h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .conteudo-ad-container-1 {
+        text-align: center;
+    }
+
+    .header-container-3 {
+        position: relative;
+        left: 0%;
+    }
+
+    .header-container-3 p {
+        width: auto;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    #buttons-service {
+        text-align: block;
+    }
+
+    .options-service {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-ul {
+        display: block;
+    }
+
+    .conteudo-ul {
+        width: auto;
+        height: auto;
+    }
+
+    .image-ul {
+        display: none;
+    }
+
+    .texto-container-2 h2, .texto-container-2 p {
+        width: auto;
+    }
+
+    .stats-section {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding: 3vh 6vh;
+        gap: 2rem;
+    }
+
+    .stat-item h2 {
+        font-size: 1.9rem;
+    }
+
+    .stat-item p {
+        font-size: var(--font-p);
+    }
+
+    .content ul li a {
+        border-radius: 7px;
+    }
+
+    #header-container-3 {
+        width: auto;
+        text-align: center;
+        padding: 0 3vh;
+    }
+
+    .container-7 {
+        padding: 7vh 5vh;
+    }
+
+    .parceria-item img {
+        width: 25vh;
+        height: 12vh;
+    }
+
+    .parcerias-itens {
+        gap: 2.5rem;
+    }
+    
+    #coca-cola-parceria img {
+        width: 29vh;
+    }
+    
+    #mitsubishi-parceria img {
+        width: 18vh;
+    }
+
+    .container-9 {
+        padding: var(--padding-section);
+        display: block;
+        text-align: center;
+    }
+
+    .container-9 p {
+        text-align: center;
+    }
+
+    .container-9 img {
+        width: 42.5vh;
+        height: 33vh;
+        margin-top: 3.5vh;
+    }
+
+    .container-9 header {
+        width: auto;
+    }
+
+    .container-6 {
+        padding: 10vh 5vh 15vh 5vh;
+        display: block;
+        text-align: center;
+    }
+
+    .container-6 video {
+        width: 29rem;
+        border-radius: 3vh;
+        height: auto;
+    }
+
+    .map-container {
+        min-width: 75vh;
+    }
+
+    .text-container-6 header p {
+        width: auto;
+        text-align: center;
+    }
+
+    .text-container-6 {
+        margin-top: 0;
+    }
+
+    .container-11 {
+        display: block;
+        text-align: center;
+    }
+
+    .container-11 header {
+        width: auto;
+        margin-bottom: 5vh;
+    }
+
+    .container-11 p {
+        text-align: center;
+    }
+
+    #mapa-brasil {
+        width: 40vh;
+        margin: 0 auto;
+    }
+
+    .container-mei {
+        margin: 0;
+        display: block;
+        padding: 5vh;
+        height: auto;
+    }
+
+    .text-container-mei h1 {
+        margin-top: 0;
+    }
+
+    .text-container-mei p {
+        text-align: center;
+    }
+
+    .conteudo-container-mei {
+        display: none;
+    }
+
+    .container-4 {
+        padding: var(--padding-section);
+        text-align: center;
+    }
+
+    .texto-container-4 p {
+        text-align: center;
+    }
+
+    .container-10 {
+        padding: 10vh 0;
+    }
+
+    .container-10 header {
+        padding: 0 5vh;
+    }
+
+    .carousel__item {
+        width: 32vh;
+        height: 27vh;
+    }
+
+    .c {
+        width: 480px;
+        height: 260px;
+        padding-bottom: 15px;
+    }
+
+    .label-slide {
+        width: 8%;
+        height: 7px;
+    }
+
+    #img-tec {
+        display: none;
+    }
+
+    .defensa-itens {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+    #logo-footer {
+        display: none;
+    }
+
+    .rodape {
+        display: block;
+    }
+
+    .itens-footer {
+        margin-left: 0;
+    }
+
+    .contato, .empresa {
+        margin-bottom: 4vh;
+    }
+
+    #logo-footer-mobile {
+        height: 7rem;
+        text-align: center;
+    }
+
+    .logo-footer-mobile {
+        margin-top: 6vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy {
+        font-size: var(--font-p);
+    }
+
+    .play-button img, .pause-button img {
+        margin-top: 0.3vh;
+        width: 25px;
+        height: 45px;
+    }
+
+    .phone-container {
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+
+    #simbolo-menu-mobile {
+        display: block;
+    }
+
+    #simbolo-menu-mobile:hover {
+        opacity: 0.7;
+    }
+
+    .cabecalho {
+        padding: 4vh 5vh 0vh 5vh;
+    }
+
+    .cabecalho-sticky {
+        padding: 3.5vh 5vh;;
+    }
+
+    .menu-cabecalho-sticky {
+        display: none;
+    }
+
+    #btn-menu:hover {
+        background: transparent;
+    }
+
+    .conteudo-ad-container-1, .container-3, .container-11 {
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (min-width: 992.1px) and (max-width: 1200px) {
+    :root {
+        --font-h1: 2.2rem;
+        --h1-bold: 700;
+        --font-p: 1rem;
+        --p-bold: 500;
+        --padding-section: 12vh 7vh;
+        --shadow-h1: 1px 1px 4px black;
+    }
+
+    .container-1 {
+        padding: var(--padding-section);
+    }
+
+    #conteudo-container-1 {
+        margin-left: 0;
+    }
+
+    .main-container-1 h1 {
+        width: auto;
+        font-size: var(--font-h1);
+    }
+
+    .main-container-1 p {
+        font-size: 1.1rem;
+    }
+
+    .main-container-1 {
+        text-align: center;
+    }
+
+    .buttons-container-1 {
+        justify-content: center;
+    }
+
+    .cards-container {
+        margin-top: 12vh;
+    }
+
+    .container-8 {
+        display: block;
+        width: 100%;
+        padding: 9vh 5vh;
+    }
+
+    .service-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-item h3 {
+        font-size: 0.9rem;
+        width: 12rem;
+    }
+
+    .service-item img {
+        width: 45px;
+    }
+
+    #header-container-3 {
+        text-align: center;
+    }
+
+    .container-8 header {
+        width: auto;
+        text-align: center;
+    }
+
+    .container-8 h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .conteudo-ad-container-1 {
+        text-align: center;
+    }
+
+    .header-container-3 {
+        position: relative;
+        left: 0%;
+    }
+
+    .header-container-3 p {
+        width: auto;
+    }
+
+    .content {
+        padding: 0;
+    }
+
+    #buttons-service {
+        text-align: block;
+    }
+
+    .options-service {
+        display: flex;
+        justify-content: center;
+    }
+
+    .container-ul {
+        display: block;
+    }
+
+    .conteudo-ul {
+        width: auto;
+        height: auto;
+    }
+
+    .image-ul {
+        display: none;
+    }
+
+    .texto-container-2 h2, .texto-container-2 p {
+        width: auto;
+    }
+
+    .stats-section {
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        padding: 3vh 6vh;
+        gap: 2rem;
+    }
+
+    .stat-item h2 {
+        font-size: 1.9rem;
+    }
+
+    .stat-item p {
+        font-size: var(--font-p);
+    }
+
+    .content ul li a {
+        border-radius: 7px;
+    }
+
+    #header-container-3 {
+        width: auto;
+        text-align: center;
+        padding: 0 3vh;
+    }
+
+    .container-7 {
+        padding: 7vh 5vh;
+    }
+
+    .parceria-item img {
+        width: 25vh;
+        height: 12vh;
+    }
+
+    .parcerias-itens {
+        gap: 2.5rem;
+    }
+    
+    #coca-cola-parceria img {
+        width: 29vh;
+    }
+    
+    #mitsubishi-parceria img {
+        width: 18vh;
+    }
+
+    .container-9 {
+        padding: 10vh;
+    }
+
+    .container-9 img {
+        width: 42.5vh;
+        height: 33vh;
+        margin-top: 3.5vh;
+    }
+
+    .container-6 {
+        padding: 10vh 5vh 15vh 5vh;
+        display: block;
+        text-align: center;
+    }
+
+    .container-6 video {
+        width: 35rem;
+        border-radius: 3vh;
+        height: auto;
+    }
+
+    .text-container-6 header p {
+        width: auto;
+        text-align: center;
+    }
+
+    .text-container-6 {
+        margin-top: 0;
+    }
+
+    .container-11 header {
+        width: 35rem;
+    }
+
+    #mapa-brasil {
+        width: 40vh;
+    }
+
+    .container-mei {
+        align-items: center;
+        margin-bottom: 30vh;
+        margin-top: 30vh;
+        height: 48vh;
+        padding: 0 5vh;
+    }
+
+    .text-container-mei h1 {
+        margin-top: 0;
+    }
+
+    .conteudo-container-mei img {
+        width: 30rem;
+    }
+
+    .container-4 {
+        padding: var(--padding-section);
+        text-align: center;
+    }
+
+    .texto-container-4 p {
+        text-align: center;
+    }
+
+    .container-10 {
+        padding: 10vh 0;
+    }
+
+    .container-10 header {
+        padding: 0 5vh;
+    }
+
+    .carousel__item {
+        width: 40vh;
+        height: 35vh;
+    }
+
+    .c {
+        width: 520px;
+        height: 300px;
+        padding-bottom: 15px;
+    }
+
+    .label-slide {
+        width: 8%;
+        height: 7px;
+    }
+
+    #img-tec {
+        display: none;
+    }
+
+    .defensa-itens {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+    #logo-footer {
+        display: none;
+    }
+
+    .rodape {
+        display: block;
+    }
+
+    .itens-footer {
+        margin-left: 0;
+    }
+
+    .contato, .empresa {
+        margin-bottom: 4vh;
+    }
+
+    #logo-footer-mobile {
+        height: 7rem;
+        text-align: center;
+    }
+
+    .logo-footer-mobile {
+        margin-top: 6vh;
+        display: flex;
+        justify-content: center;
+    }
+
+    .copy {
+        font-size: var(--font-p);
+    }
+
+    .play-button img, .pause-button img {
+        margin-top: 0.3vh;
+        width: 25px;
+        height: 45px;
+    }
+
+    .phone-container {
+        background-size: cover;
+        background-position: center;
+        margin: 0 auto;
+        margin-top: 5vh;
+    }
+
+    .container-9 {
+        padding: var(--padding-section);
+    }
+
+    .cabecalho {
+        padding: 4vh 5vh 0vh 5vh;
+    }
+
+    .cabecalho-sticky {
+        padding: 3.5vh 5vh;;
+    }
+
+    .menu-cabecalho-sticky {
+        display: none;
+    }
+
+    #btn-menu:hover {
+        background: transparent;
+    }
+}
+
+@media screen and (min-width: 1200.1px ) and (max-width: 1450px){
+    .cards-container {
+        margin-top: 12vh;
+    }
+
+    .container-8 {
+        display: block;
+        width: 100%;
+        padding: 9vh 5vh;
+    }
+
+    .service-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-item h3 {
+        width: 16rem;
+    }
+
+    .service-item img {
+        width: 45px;
+    }
+
+    .container-8 header {
+        width: auto;
+        text-align: center;
+    }
+
+    .container-8 h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .container-6 video {
+        width: 40rem;
+        border-radius: 3vh;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1200.1px ) and (max-width: 1410px){
+    .container-4 {
+        padding: var(--padding-section);
+        text-align: center;
+    }
+
+    .texto-container-4 p {
+        text-align: center;
+    }
+
+    #img-tec {
+        display: none;
+    }
+
+    .defensa-itens {
+        justify-content: center;
+        grid-template-columns: repeat(auto-fit, minmax(300px, auto));
+    }
+
+    .container-11 header {
+        width: 41rem;
+    }
+
+    .content ul li a {
+        border-radius: 30px;
+    }
+
+    .container-2 {
+        padding: 15vh 12vh;
+    }
+
+    .cards-container {
+        margin-top: 12vh;
+    }
+
+    .container-8 {
+        display: block;
+        width: 100%;
+        padding: 9vh 5vh;
+    }
+
+    .service-items {
+        display: flex;
+        justify-content: center;
+    }
+
+    .service-item h3 {
+        width: 16rem;
+    }
+
+    .service-item img {
+        width: 45px;
+    }
+
+    .container-8 header {
+        width: auto;
+        text-align: center;
+    }
+
+    .container-8 h1 {
+        margin-bottom: 0.5rem;
+    }
+
+    .container-6 video {
+        width: 40rem;
+        border-radius: 3vh;
+        height: auto;
+    }
+}

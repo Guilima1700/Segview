@@ -1,0 +1,51 @@
+body {
+    overflow-x: hidden;
+}
+
+.container-client-1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+}
+
+.container-client-1 img {
+    position: absolute;
+    margin-left: 90rem;
+    margin-top: -16rem;
+    opacity: 0.6;
+    width: 40rem;
+}
+
+.conteudo-client-1 h1 {
+    font-size: 50px;
+    color: #fff;
+}
+
+.container-client-1 p {
+    font-size: 20px;
+    color: rgb(194, 194, 194);
+}
+
+.container-client-2 {
+    height: 70vh;
+    display: flex;
+}
+
+.conteudo-client-2 {
+    padding: 15vh 20vh;
+    color: #fff;
+}
+
+.conteudo-client-2 h1 {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.conteudo-client-2 h3 {
+    text-align: justify;
+    font-size: 20px;
+    font-weight: 500;
+    width: 46rem;
+}
